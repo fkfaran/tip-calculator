@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+<body>
+
+<h3>Tip Calculator</h3>
+
+<div class="flex-container">
+  <div class="flex-child">
+    <form onsubmit="return false;">
+    <label for="fname">Bill</label>
+    <input type="text" id="total_bill" name="total_bill" onkeypress="return isAllowedKey( event )" placeholder="Enter your bill here">
+
+    <label for="lname">Tip %</label>
+	<div class="increment_button">
+       <button onclick="decrement_value('tip_percentage')">-</button>
+       <input type="number" id="tip_percentage" name="tip_percentage" min="0" onkeypress="return isAllowedKey( event )" onInput="handleMaxVal( this );"  >
+       <button onclick="increment_value('tip_percentage')">+</button>
+   </div>
+    <label for="country">Number of people</label>
+   <div class="increment_button">
+       <button onclick="decrement_value('total_people')">-</button>
+       <input type="number" id="total_people" name="total_people" min="0" oninput="this.value = Math.abs(this.value)" onkeypress="return isAllowedKey( event )">
+       <button onclick="increment_value('total_people')">+</button>
+   </div>
+   <input type="button" id="calculate" value="Calculate">
+  </form>
+  </div>  
+  <div class="flex-child">
+    <div id='tip_calculator_left_parent_div'>
+    <div class ='tip_calculator_inner_div'>
+    	<label>Tip</label><br><span>per person</span>
+    </div>
+    <div>
+    	<label>Total</label><br><span>per person</span>
+    </div>
+    </div>    
+    <div id='tip_calculator_right_parent_div'>
+    <div id="tip_result">N/A</div>
+    <div id="total_per_person">N/A</div>
+    </div>
+  </div>  
+</div>
+</body>
+</html>

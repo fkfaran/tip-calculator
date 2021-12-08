@@ -1,0 +1,91 @@
+body{
+	font-family: sans-serif;
+}
+input[type=text],input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=button] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #45a049;
+}
+h3 {
+	text-align:center;
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.flex-container {
+    display: flex;
+	
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid #e9e9db;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+#tip_calculator_left_parent_div, #tip_calculator_right_parent_div{
+    height:100px;
+    margin-right:10px;
+    float:left;
+}
+#tip_calculator_left_parent_div label{
+	font-size: 30px;
+}
+.tip_calculator_inner_div{
+    float:left;
+    margin-right:5px;
+}
+#tip_result {
+	font-size: 30px;
+}
+#total_per_person {
+	font-size: 34px;
+    font-weight: bold;
+}
+div.increment_button {
+	display:flex;
+	padding: 0px;
+}
+div.increment_button button {
+	height: 41px;
+    margin: 7px 0 0 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    display: inline-block;
+    font-weight: 700;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border: 1px solid gray;
+    padding: 2px 15px 3px 15px;
+	font-size: 25px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
